@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@1,900&family=Outfit:wght@400;700;900&family=Cormorant+Garamond:ital,wght@1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-chic: "Playfair Display", serif;
+}
+
+@layer base {
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+.chic-slant {
+  font-family: var(--font-chic);
+  font-style: italic;
+  display: inline-block;
+  transform: skewX(-10deg);
+}
+
+.chic-slant-light {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  display: inline-block;
+  transform: skewX(-8deg);
+}
+
+@keyframes progress {
+  from { stroke-dasharray: 0 100; }
+}
+
+.animate-progress {
+  animation: progress 2s ease-out forwards;
+}
