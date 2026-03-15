@@ -1,4 +1,3 @@
-
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
@@ -8,8 +7,8 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    // تم نقل base إلى داخل الـ return
-    base: "/my-project/",
+    // تم تصحيح السطر ده
+    base:  "/my-ai-app/",
     
     plugins: [react(), tailwindcss()],
     
